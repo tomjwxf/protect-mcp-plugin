@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command // empty' | grep -q 'protect-mcp' && echo '✅ Tool call wrapped with protect-mcp' || true"
+          }
+        ]
+      }
+    ]
+  }
+}
