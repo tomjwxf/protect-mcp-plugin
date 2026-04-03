@@ -35,4 +35,4 @@ claude --plugin-dir ./claude-plugin
 - npm: https://npmjs.com/package/protect-mcp
 - IETF Draft: https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/
 - Docs: https://scopeblind.com/docs/protect-mcp
-- License: MIT
+- License: MIT (protect-mcp), Apache-2.0 (verification layer)

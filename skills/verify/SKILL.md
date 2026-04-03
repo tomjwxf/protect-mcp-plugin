@@ -5,7 +5,7 @@ description: Verify Ed25519-signed decision receipts offline. Use when the user 
 
 # Verify Receipts — Offline, No Account Needed
 
-The user wants to verify decision receipts. The verifier is MIT-licensed and operates without contacting any server.
+The user wants to verify decision receipts. The verifier is Apache-2.0 licensed and operates without contacting any server.
 
 ## Steps
 
@@ -31,5 +31,5 @@ npx @veritasacta/verify ./receipts/
 - The verifier doesn't know ScopeBlind exists — pure Ed25519 math
 - Works offline — no API calls, no accounts, no callbacks
 - Verifies receipt structure, signature, and content hash
-- MIT licensed — use it anywhere
+- Apache-2.0 licensed — use it anywhere, patent grant included
 - IETF Internet-Draft: https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/
