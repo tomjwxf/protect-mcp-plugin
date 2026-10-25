@@ -1,13 +1,13 @@
 {
   "name": "protect-mcp",
-  "description": "MCP security gateway — per-tool policies, Ed25519-signed receipts, human approval gates. Shadow mode logs everything without blocking. Enforce mode applies policy. Every decision is cryptographically signed and verifiable offline.",
-  "version": "1.0.0",
+  "description": "Guided setup for protect-mcp policy checks, shadow and enforcement workflows, and signed receipt verification with an expected public key. Installing this plugin does not enable enforcement; you choose and test the gateway configuration.",
+  "version": "1.1.0",
   "author": {
     "name": "Tom Farley",
     "email": "tommy@scopeblind.com"
   },
-  "homepage": "https://scopeblind.com",
-  "repository": "https://github.com/scopeblind/ScopeBlindD2",
+  "homepage": "https://scopeblind.com/protect-mcp",
+  "repository": "https://github.com/tomjwxf/protect-mcp-plugin",
   "license": "MIT",
-  "note": "protect-mcp (MIT). Verification layer (@veritasacta/verify) is Apache-2.0."
+  "keywords": ["mcp", "cedar", "policy", "receipts", "verification"]
 }
