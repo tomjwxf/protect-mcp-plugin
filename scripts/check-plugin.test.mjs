@@ -35,8 +35,8 @@ test('all executable package examples use reviewed pins or the already installed
     const text = read(path);
     for (const line of text.split('\n').filter(line => /\bnpx\b/.test(line))) {
       if (/\bnpx\s+--no-install\s+(protect-mcp|verify)\b/.test(line)) continue;
-      if (/\bprotect-mcp\b/.test(line)) assert.match(line, /protect-mcp@0\.32\.3\b/, `${path}: unpinned gateway: ${line}`);
-      if (/@veritasacta\/verify/.test(line)) assert.match(line, /@veritasacta\/verify@0\.11\.0\b/, `${path}: unpinned verifier: ${line}`);
+      if (/\bprotect-mcp\b/.test(line)) assert.match(line, /protect-mcp@0\.32\.4\b/, `${path}: unpinned gateway: ${line}`);
+      if (/@veritasacta\/verify/.test(line)) assert.match(line, /@veritasacta\/verify@0\.11\.1\b/, `${path}: unpinned verifier: ${line}`);
     }
     assert.doesNotMatch(text, /(?:protect-mcp|@veritasacta\/verify)@latest\b/, path);
     assert.doesNotMatch(text, /https:\/\/github\.com\/[^\s)]+\/ScopeBlindD2\b/i, path);
@@ -68,6 +68,6 @@ test('verification guidance requires an expected key and separates checking from
     assert.match(text, /--key/);
     assert.match(text, /trusted|independent/i);
     assert.match(text, /execution|executed|complete|coverage/i);
-    assert.doesNotMatch(text, /verify@0\.11\.0\s+\.\/receipts\/\s*$/m, 'Directory arguments are not receipt verification');
+    assert.doesNotMatch(text, /verify@0\.11\.1\s+\.\/receipts\/\s*$/m, 'Directory arguments are not receipt verification');
   }
 });

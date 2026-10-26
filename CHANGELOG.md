@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Pin the gateway and verifier examples, the static checks and the clean-install
+  smoke test to protect-mcp 0.32.4 and @veritasacta/verify 0.11.1.
+
 ## 1.1.0
 
 - Remove the post-tool message that inferred protection from a command's text.

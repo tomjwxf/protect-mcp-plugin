@@ -19,7 +19,7 @@ This plugin provides setup guidance. Installing it does not grant tool access, i
 Use Node.js 22 and npm. In a fresh configuration directory, after reviewing the files this creates:
 
 ```sh
-npx --yes protect-mcp@0.32.3 init
+npx --yes protect-mcp@0.32.4 init
 ```
 
 This creates `protect-mcp.json` and the private signing key `keys/gateway.json`. Preserve existing keys and configuration. Do not delete an existing configuration to make initialization succeed. Never display, upload, or commit private keys.
@@ -49,7 +49,7 @@ The supported keys are `block`, `require_approval`, and `rate_limit`, not `decis
 Use this launch shape in the MCP host, replacing the illustrative child command with the reviewed server executable and argument list:
 
 ```sh
-npx --yes protect-mcp@0.32.3 --policy ./protect-mcp.json --enforce -- node /absolute/path/to/server.js
+npx --yes protect-mcp@0.32.4 --policy ./protect-mcp.json --enforce -- node /absolute/path/to/server.js
 ```
 
 Run from the configuration directory. If the host starts elsewhere, use absolute paths for the policy, signing key, and child server. `wrap` prints client configuration and exits; it is not the launch command. The standalone `mcp` helper exposes evaluation tools and does not wrap another server.

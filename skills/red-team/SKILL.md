@@ -18,7 +18,7 @@ With Node.js 22 and npm, choose a new directory that does not already exist:
 mkdir protect-mcp-policy-test
 cd protect-mcp-policy-test
 npm init -y
-npm install --save-exact protect-mcp@0.32.3 @veritasacta/verify@0.11.0
+npm install --save-exact protect-mcp@0.32.4 @veritasacta/verify@0.11.1
 ```
 
 ## Evaluate, sign, and check a changed copy
