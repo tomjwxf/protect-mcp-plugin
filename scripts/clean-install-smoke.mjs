@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const temporary = mkdtempSync(join(tmpdir(), 'protect-mcp-plugin-smoke-'));
-const pins = { 'protect-mcp': '0.32.3', '@veritasacta/verify': '0.11.0' };
+const pins = { 'protect-mcp': '0.32.4', '@veritasacta/verify': '0.11.1' };
 const installEnv = { ...process.env, NO_COLOR: '1', npm_config_audit: 'false', npm_config_fund: 'false', PROTECT_MCP_TELEMETRY: 'off' };
 const localEnv = { ...installEnv, npm_config_offline: 'true', PATH: `${dirname(process.execPath)}:${process.env.PATH}`, NODE_OPTIONS: `--require ${JSON.stringify(join(root, 'tests/fixtures/no-network.cjs'))}` };
 const gateway = join(temporary, 'node_modules/protect-mcp/dist/cli.js');

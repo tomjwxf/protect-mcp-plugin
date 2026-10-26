@@ -16,7 +16,7 @@ This is setup guidance, not automatic protection. Installing the plugin grants n
 3. With Node.js 22 and npm, initialize a fresh configuration directory:
 
 ```sh
-npx --yes protect-mcp@0.32.3 init
+npx --yes protect-mcp@0.32.4 init
 ```
 
 Initialization creates `protect-mcp.json`, a sample tool policy, and `keys/gateway.json`. It does not connect the host. Preserve existing files and signing keys. Never display, upload, or commit the private key.
@@ -24,7 +24,7 @@ Initialization creates `protect-mcp.json`, a sample tool policy, and `keys/gatew
 4. Review the configuration and configure the MCP host to use the wrapper. This is the launch shape, with the child command replaced by the reviewed server command:
 
 ```sh
-npx --yes protect-mcp@0.32.3 --policy ./protect-mcp.json -- node /absolute/path/to/server.js
+npx --yes protect-mcp@0.32.4 --policy ./protect-mcp.json -- node /absolute/path/to/server.js
 ```
 
 Run from the configuration directory. If the host starts elsewhere, use absolute paths for the policy, its `signing.key_path`, and the child server. Passing the configuration explicitly enables its signing settings. `wrap` only prints a configuration and exits; it does not start the server.
